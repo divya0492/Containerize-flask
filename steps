@@ -1,0 +1,23 @@
+Step 1: Choose a Flask Application
+Select a Flask-based web server application from GitHub or any other source. 
+
+Step 2: Create a Dockerfile
+In order to containerize the Flask application, you need to create a Dockerfile. The Dockerfile will define the instructions for building the Docker image.
+
+Step 3: Build and Push the Docker Image
+
+To build the image locally, open a terminal and navigate to the directory containing the Dockerfile. Then run the following command:
+
+docker build -t flask-app:latest .
+
+
+After the image is built, we  can push it to a container registry, such as Docker Hub or a private registry. 
+
+Step 4: Set up Kubernetes Cluster
+Set up a Kubernetes cluster using your preferred method. 
+
+Ensure that we  have kubectl configured to communicate with the Kubernetes cluster.
+
+Step 5: Create Kubernetes Deployment and Service Manifests
+
+Create Kubernetes manifests to deploy the Flask application . The manifests should include a Deployment for the Flask application, a Service to expose it. 
